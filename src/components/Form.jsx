@@ -25,18 +25,16 @@ class Form extends Component {
     let BMI =
       (this.state.Weight / this.state.Height / this.state.Height) * 10000;
 
-      this.setState({
-        Result :(
+    this.setState({
+      Result:
         BMI < 18.5
           ? "underweight"
           : BMI < 24.9 && BMI >= 18.5
           ? "Normalweight"
           : BMI < 29.9 && BMI >= 25
           ? "Overweight"
-          : "Obesity")
-      })
- 
-    
+          : "Obesity",
+    });
   }
 
   render() {
@@ -79,13 +77,11 @@ class Form extends Component {
           </form>
         </div>
         <div className="d-flex justify-content-center">
-        {this.state.Result? <Box data={this.state.Result} /> :"" }
+          {this.state.Result ? <Box data={this.state.Result} /> : ""}
         </div>
       </div>
     );
-
   }
-  
 }
 
 export default Form;

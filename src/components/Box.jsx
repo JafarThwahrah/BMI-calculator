@@ -10,7 +10,8 @@ const Box = (props) => {
         </h4>
       ) : props.data === "Overweight" ? (
         <h4 className="text-center">
-          Carefull you need to stop gaining calories otherwise you will be Obese Soon
+          Carefull you need to stop gaining calories otherwise you will be Obese
+          Soon
         </h4>
       ) : props.data === "Normalweight" ? (
         <h4 className="text-center">You are Fine</h4>
