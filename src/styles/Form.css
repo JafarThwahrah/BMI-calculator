@@ -1,0 +1,15 @@
+.MBI-form{
+    background-color: whitesmoke;
+    border-radius: 10px;
+
+}
+
+.mpitext{
+    font-style: italic;
+    color: gray;
+}
+
+.formContainer{
+    height: 80vh;
+}
+
