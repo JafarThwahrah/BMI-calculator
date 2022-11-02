@@ -1,8 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import "../styles/Footer.css";
 
-class Footer extends Component {
-  render() {
+const Footer = ()=>{
     return (
       <div>
         <footer className="footer d-flex justify-content-center align-items-center">
@@ -10,7 +9,7 @@ class Footer extends Component {
         </footer>
       </div>
     );
-  }
+  
 }
 
 export default Footer;
